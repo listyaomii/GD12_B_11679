@@ -6,6 +6,7 @@ import RegisterPage from "../pages/auth/RegisterPage";
 import DashboardPage from "../pages/DashboardPage";
 import ContentPage from "../pages/ContentPage";
 import ProtectedRoutes from "./ProtectedRoutes";
+import WatchLaterPage from "../pages/WatchLaterPage";
 
 const router = createBrowserRouter([
   {
@@ -33,12 +34,16 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/user",
+        path: "",  // Path untuk "/user" yang mengarah ke DashboardPage
         element: <DashboardPage />,
       },
       {
-        path: "/user/content",
+        path: "content",  // Path relatif "/user/content"
         element: <ContentPage />,
+      },
+      {
+        path: "watch-laters",  // Path relatif "/user/watch-laters"
+        element: <WatchLaterPage />,
       },
     ],
   },

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { ToastContainer, toast } from "react-toastify"; // Impor ToastContainer dan toast
+import "react-toastify/dist/ReactToastify.css"; // Impor stylesheet untuk toastify
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'

@@ -15,6 +15,7 @@ const routes = [
     path: "/register",
     name: "Register",
   },
+
 ];
 
 /* eslint-disable react/prop-types */
